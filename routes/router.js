@@ -49,7 +49,7 @@ mongoose.Promise = require('bluebird'); // Validation : To capture validation
     {passReqToCallback:true},
     function(req, username, password, done){
       let errors = "";
-      req.checkBody("username", "Please enter a valid username").notEmpty().isLength({max: 30});
+      req.checkBody("username", "Please enter a valid username").notEmpty().isLength({max: 25});
       req.checkBody("password", "Please enter a Password").notEmpty();
 
       errors = req.validationErrors();

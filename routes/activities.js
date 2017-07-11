@@ -1,7 +1,7 @@
 const router = require('./routes/router');
 
 
-// get('/api/activities')
+
 // Get ALL the activities entered by the user logged in
 router.get('/api/activities', function(req, res) {
   activities.find({userId:session.id})
@@ -38,7 +38,6 @@ router.post('/api/activities', function(req, res) {
 });
 
 //get('/api/activities/:id')
-// This fetches the  activity based on a ID from the activity collection
 router.get('/api/activities/:id', function(req, res) {
     activities.find({_id:req.params.id, userId:session.id})
     .then(function(activity) {

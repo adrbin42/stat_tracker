@@ -1,17 +1,6 @@
 const router = require('./routes/router');
-const login = require('./routes/login');
-const activities = require('./routes/activities');
-
-////////
-app.use('/', router);
-app.use('/api/login', login);
-app.use('/api/activities', activities);
 
 //post('/api/activities/:id/stats')
-//This method fetch the id and select the activity (like swimming, walking etc.)
-//Display all the activities entered by the user sorted by date DESC
-//Still hold good only for logged User
-
 router.post('/api/activities/:id/stats', (req, res) => {
     var query, activity;
 
@@ -36,9 +25,6 @@ router.post('/api/activities/:id/stats', (req, res) => {
 });
 
 //delete('/api/stats/:id')
-//This method fetches the id and get the date and activity
-//Based on the date and activity, removes all activity for the day
-
 router.delete('/api/stats/:id', (req, res) => {
   var query, date, activity;
 
