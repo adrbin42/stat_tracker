@@ -1,0 +1,45 @@
+{
+  "name": "stat_tracker",
+  "version": "1.0.0",
+  "description": "App that tracks user activity statistics",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrbin42/stat_tracker.git"
+  },
+  "keywords": [
+    "stats",
+    "tracker",
+    "stat",
+    "tracker",
+    "mongo",
+    "mongoose"
+  ],
+  "author": "Adrienne Bing",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adrbin42/stat_tracker/issues"
+  },
+  "homepage": "https://github.com/adrbin42/stat_tracker#readme",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "express-session": "^1.15.3",
+    "express-validator": "^3.2.1",
+    "install": "^0.10.1",
+    "mongodb": "^2.2.30",
+    "mongoose": "^4.10.8",
+    "morgan": "^1.8.2",
+    "mustache": "^2.3.0",
+    "mustache-express": "^1.2.5",
+    "npm": "^5.1.0",
+    "passport": "^0.3.2",
+    "passport-http": "^0.3.0",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7"
+  }
+}
